@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Gravity Bot</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/gravityBot.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+	<section id="gravityBot">
+	    <div class="vertical-align">
+	        <div class="container-fluid">
+	            <div class="row">
+	                <div class="col-sm-6 col-sm-offset-3 col-xs-offset-0">
+	                    <div class="card">
+                            <h1 class="text-center" style="text-transform: uppercase;box-shadow: 0 5px 10px 0 rgba(70, 131, 180, 0.671); padding: 5px; position:relative;bottom:18px"><img src="./bot.png" style="width:50px"/> Gravity Bot</h1>
+                            <div id="splash" class="">
+                                    <div style="margin-top: 100px;">
+                                        <img src="./bot.png" style="left:5px;" />
+                                        <img src="./user.png" style="right:5px;"/>
+                                        <h1 class="mt-3" style="text-transform: uppercase;">Gravity Bot</h1>
+                                    </div>
+                                    <div id="chat-start">
+                                        <input type="text" name="username" id="username" value="" placeholder="Tell me your name first.." required>
+                                        <button type="button" id="start-chat">Start chat</button>
+                                    </div>
+                                    <div style="position: absolute; bottom:10px; left:0;right:0;">Created by Team Gravity</div>
+                                </div>
+                            <div id="chat" class="mychat-wrapper">
+                                
+                                <div class="wrapper-messages">
+                                    <div class="spinLoader hidden"></div>
+                                    <div id="messages"></div>
+                                </div>
+                                <div class="chatControl invisible">
+                                    <input id="userInput" type="text" placeholder="Type a message" class="userInput">
+                                    <button type="button" class="submit"><i class="fa fa-arrow-right"></i></button>
+                                    <span class="clearfix"></span>
+                                </div>
+                            </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</section>
+	<script type="text/javascript" src="scripts/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="scripts/ques.data.js"></script>
+    <script type="text/javascript" src="scripts/enc.gravityBot.js"></script>
+    <script type="text/javascript" src="scripts/voice.js"></script>
+</body>
+</html>
